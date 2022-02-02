@@ -34,13 +34,20 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: bold;
+  background-color: #ffffff;
+  &:hover {
+    background-color:#EEE;
+  }
 }
 
 .decreaseButton {
   font-size: 14px;
-  background-color: rgba(255, 0, 0, 0); 
+  background-color: #ff000000; 
   border: none;
   color: #F5E5E7;
+  &:hover {
+    color: #E4D4D6;
+  }
 }
 
 .glass {
