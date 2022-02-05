@@ -6,9 +6,9 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-let counter = document.querySelector('.number--js');
-let moreWater = document.querySelector('.increaseButton--js');
-let lessWater = document.querySelector('.decreaseButton--js');
+const counter = document.querySelector('.number--js');
+const moreWater = document.querySelector('.increaseButton--js');
+const lessWater = document.querySelector('.decreaseButton--js');
 
 const key = new Date().toISOString().slice(0,10);
 
