@@ -6,7 +6,7 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-const counter = document.querySelector('.number--js');
+const counter = document.querySelector('.glass__counter--js');
 const moreWater = document.querySelector('.increaseButton--js');
 const lessWater = document.querySelector('.decreaseButton--js');
 

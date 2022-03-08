@@ -146,12 +146,29 @@
   </head>
   <body>
     <main class="main">
-        <h1 class="title">wodiczkapp</h1>
+        <h1 class="title">Wodiczkapp</h1>
       <div class="glass">
-        <span class="number number--js"></span>
+        <span class="glass__counter glass__counter--js"></span>
+        <svg
+          width="280"
+          height="280"
+          viewBox="0 0 280 280"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.748 2.8875C241.085 1.05 238.74 0 236.255 0H43.7555C41.288 0 38.9255 1.05 37.263 2.8875C35.618 4.7075 34.7955 7.1575 35.0405 9.625L61.2905 272.125C61.7455 276.605 65.508 280 70.0055 280H210.005C214.503 280 218.265 276.605 218.703 272.125L244.953 9.625C245.215 7.1575 244.41 4.7075 242.748 2.8875Z"
+            fill="#ECEFF1"
+          />
+          <path
+            class="water"
+            d="M221.5 69L202 262.5H78L60 83C94 87.6253 104.5 87.3419 139.46 77.9292C166.395 70.6773 185.04 66.1534 221.5 69Z"
+            fill="#2196F3"
+          />
+        </svg>
       </div>
-      <button class="increaseButton increaseButton--js">dodaj szklankę</button>
-      <button class="decreaseButton decreaseButton--js">usuń szklankę</button>
+      <button class="button button__add button__add--js">dodaj szklankę</button>
+      <button class="button button__remove button__remove--js">usuń szklankę</button>
     </main>
   </body>
 </html>
