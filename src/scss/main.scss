@@ -21,48 +21,65 @@ body {
   align-items: center;
 }
 
+.button {
+  width: 216px;
+  height: 47px;
+
+  &__add {
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    &:hover {
+      background-color:#EEE;
+    } 
+  }
+
+  &__remove {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    color: #F5E5E7;
+    &:hover {
+      color: #E4D4D6;
+    }
+  }
+}
+
+.glass {
+  position: relative;
+  margin-bottom: 48px;
+  &__counter {
+    position: absolute;
+    color: black;
+    font-size: 112px;
+    top: 117px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
 .title {
   font-size: 55px;
   margin-bottom: 68px;
 }
 
-.increaseButton {
-  font-size: 18px;
-  margin-bottom: 36px;
-  padding: 13px 48px;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
-  background-color: #ffffff;
-  &:hover {
-    background-color:#EEE;
+.water {
+  animation: pathAnim 4s cubic-bezier(0.55, 0.1, 0.44, 0.91) infinite;
+}
+
+@keyframes pathAnim {
+  0%{
+    d: path("M221.5 69L202 262.5H78L60 83C94 87.6253 104.5 87.3419 139.46 77.9292C166.395 70.6773 185.04 66.1534 221.5 69Z")
   }
-}
-
-.decreaseButton {
-  font-size: 14px;
-  background-color: #ff000000; 
-  border: none;
-  color: #F5E5E7;
-  &:hover {
-    color: #E4D4D6;
+  50%{
+    d: path("M220 84L202 263.215H78.5L59.5 74.5C93.2861 70.0324 103.5 70 140.316 79.073C180.075 88.8715 197.772 86.482 220 84Z")
   }
-}
-
-.glass {
-  display: flex;
-  justify-content: center;
-  width: 280px;
-  height: 280px;
-  background-image: url(../assets/img/water-glass.svg);
-  background-size: contain;
-  margin-bottom: 48px;
-}
-
-.number {
-  font-size: 112px;
-  color: black;
-  margin-top: 114px;
-  line-height: 0.9em;
+  100%{
+    d: path("M221.5 69L202 262.5H78L60 83C94 87.6253 104.5 87.3419 139.46 77.9292C166.395 70.6773 185.04 66.1534 221.5 69Z")
+  }
 }
